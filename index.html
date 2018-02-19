@@ -653,9 +653,27 @@ body {
   margin-bottom:0px;
   margin-left:10px;
 }
+.row{
+  display:flex;
+  justify-content:flex-start;
+  align-items:stretch;
+  flex-wrap:nowrap;
+  padding-top:10px;
+  padding-right:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+}
+.cell{
+  min-height:75px;
+  flex-grow:1;
+  flex-basis:100%;
+}
 @media (max-width: 768px){
   .foot-form-cont{
     width:400px;
+  }
+  .row{
+    flex-wrap:wrap;
   }
 }
 @media (max-width: 480px){
